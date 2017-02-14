@@ -1,6 +1,6 @@
 
 
-int elements = 35000;
+int elements = 5000;
 float spacing = TWO_PI/elements;
 
 float x, y;
@@ -130,70 +130,7 @@ background(backR, backG, backB);
     pattern2(amp1[0], amp2[0], amp3[0], amp4[0], amp5[0], amp6[0], amp7[0], amp8[0], r[0], g[0], b[0], r2[0], g2[0], b2[0], r3[0], g3[0], b3[0], r4[0], g4[0], b4[0], r5[0], g5[0], b5[0]);
     popMatrix();
   }
-  
-
-//amp1[0]+=0.005;
-//amp3[0]-=0.005;
-
-
-
-/*
-  if (frameCount % 5 == 0) {
-
-    
-    //saveFrame("NEW6#####.png");
-
-    backR = random(0, 55);
-    backG = random(0, 55);
-    backB = random(0, 55);
-
-
-    for (int i = 0; i < co; i++) {
-
-
-      amp1[i] = int(random(10, 100));
-      amp2[i] = int(random(10, 100));
-      r[i] = int(random(100, 255));
-      g[i] = int(random(100, 255));
-      b[i] = int(random(100, 255));
-
-
-
-      amp3[i] = int(random(10, 100));
-      amp4[i] = int(random(10, 100));
-      r2[i] = int(random(100, 255));
-      g2[i] = int(random(100, 255));
-      b2[i] = int(random(100, 255));
-
-      amp5[i] = int(random(10, 100));
-      amp6[i] = int(random(10, 100));
-      r3[i] = int(random(100, 255));
-      g3[i] = int(random(100, 255));
-      b3[i] = int(random(100, 255));
-
-
-      amp7[i] = int(random(10, 100));
-      amp8[i] = int(random(10, 100));
-      r4[i] = int(random(100, 255));
-      g4[i] = int(random(100, 255));
-      b4[i] = int(random(100, 255));
-
-
-      amp9[i] = int(random(10, 100));
-      amp10[i] = int(random(10, 100));
-      r5[i] = int(random(100, 255));
-      g5[i] = int(random(100, 255));
-      b5[i] = int(random(100, 255));
-    }
-  }
-*/
-
-  
-  if (frameCount % 5 == 0){ 
-    //saveFrame("ROGGIF12_#####.png");
-    
-    
-  }
+ 
   
 }
 
@@ -235,7 +172,7 @@ void pattern2(float amp1, float amp2, float amp3, float amp4, int amp5, int amp6
       x =cos(spacing*i*amp1)*sin(spacing*i*amp2)*magnify;
      y = cos(spacing*(-amp3)*i)*cos(spacing*amp2*i)*magnify;
     strokeWeight(1);
-        stroke(r, g, b, 7);
+        stroke(r, g, b, 15);
     line(x, y,  cos(x*spacing*i)*sin(y*spacing*i), sin(y*spacing*i)*sin(x*spacing*i));
     
     
