@@ -7,9 +7,100 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="styles.css">
-	<!--<script src="p5.min.js"></script>-->
-	<!--<script src="sketch.js"></script>-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="scripts.js"></script>
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<script>
+
+
+/*LEFT*/
+$(document).ready(function()
+{
+    $("img.left").hover(function(f)
+    {
+        var randomClass = getLeftRandomImg();
+        $(f.target).attr("src", randomClass);
+    });
+});
+
+
+function getLeftRandomImg()
+{
+    //Store available css classes
+    var classes = new Array("tile1.jpg", "2tile1.jpg", "3tile1.jpg", "4tile1.jpg");
+    
+    //Give a random number from 0 to 5
+    var randomNumber = Math.floor(Math.random()*5);
+    
+
+
+    return classes[randomNumber];
+
+}
+
+
+
+/*CENTER*/
+
+$(document).ready(function()
+{
+    $("img.center").hover(function(g)
+    {
+        var randomClass = getCenterRandomImg();
+        $(g.target).attr("src", randomClass);
+    });
+});
+
+
+function getCenterRandomImg()
+{
+    //Store available css classes
+    var classes = new Array("tile2.jpg", "2tile2.jpg", "3tile2.jpg", "4tile2.jpg");
+    
+    //Give a random number from 0 to 5
+    var randomNumber = Math.floor(Math.random()*5);
+    
+
+
+    return classes[randomNumber];
+
+}
+
+
+/*RIGHT*/
+$(document).ready(function()
+{
+    $("img.right").hover(function(h)
+    {
+        var randomClass = getRightRandomImg();
+        $(h.target).attr("src", randomClass);
+    });
+});
+
+
+function getRightRandomImg()
+{
+    //Store available css classes
+    var classes = new Array("tile3.jpg", "2tile3.jpg", "3tile3.jpg", "4tile3.jpg");
+    
+    //Give a random number from 0 to 5
+    var randomNumber = Math.floor(Math.random()*5);
+    
+
+
+    return classes[randomNumber];
+
+}
+
+
+
+</script>
+
 
 
 <title>Becky Johnson</title>
@@ -23,28 +114,34 @@
 
 
 
-<div class = "wrapper">
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="scripts.js"></script>
 
 		<!--CONTAINER FOR ALL HOME PAGE TEXT-->
 		<div class = "textContainer">
+			<nav class = "_navigation"> 
+	<ul>
+				
+			<a href="#">Test link</a>
+				<li><a href="work.html">Projects</a></li>
+				<li><a href="http://becmjo.tumblr.com/">Artwork</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				</ul>
+				</nav>
+
 			<h1> Becky Johnson</h1>
-		<p class = "tag"> Second year Creative Computing student at Goldsmiths</p
+		<p class = "tag"> Third year Creative Computing student at Goldsmiths based in London and Bristol. </p>
 
 			<nav class = "_navigation"> 
-				<ul>
-				<li><a href="contact.html">Contact</a></li>
-
-				<li><a href="work.html">Work</a></li>
-				<li><a href="http://becmjo.tumblr.com/">Artwork</a></li>
-				</ul>
+				<!--
+				<a href="https://twitter.com/becmjo"><i class = "fa fa-twitter"></i></a>
+				<a href="https://www.instagram.com/becmjo/"><i class = "fa fa-instagram"></i></a>-->
 			</nav>
 
 
 		</div>
-
-
 
 		<div class = "tiles">
 			<img src="tile1.jpg" class = "left" alt="some_text">
@@ -55,14 +152,9 @@
 
 
 
-</div>
 
 
 
-<footer class = "_footer">
-<a href=""><i class = "fa fa-twitter"></i></a>
-<a href=""><i class = "fa fa-instagram"></i></a>
-</footer>
 
 
 </body>
