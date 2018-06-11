@@ -1,254 +1,370 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Mogo free html5 Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-<html lang="en">
+        <!-- Google fonts link-->
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
-<head>
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="styles.css">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="scripts.js"></script>
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="assets/css/plugins.css" />
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="assets/css/style.css">
 
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="assets/css/responsive.css" />
 
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
-<script>
 
 
-/*LEFT*/
-$(document).ready(function()
-{
-    $("img.left").hover(function(f)
-    {
-        var randomClass = getLeftRandomImg();
-        $(f.target).attr("src", randomClass);
-    });
-});
 
+    </head>
+    <body data-spy="scroll" data-target=".navbar-collapse">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class='preloader'><div class='loaded'>&nbsp;</div></div>
+        <div class="culmn">
+            <header id="main_menu" class="header navbar-fixed-top">            
+                <div class="main_menu_bg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="nave_menu">
+                                <nav class="navbar navbar-default">
+                                    <div class="container-fluid">
+                                        <!-- Brand and toggle get grouped for better mobile display -->
+                                        
 
-function getLeftRandomImg()
-{
-    //Store available css classes
-    var classes = new Array("tile1.jpg", "2tile1.jpg", "3tile1.jpg", "4tile1.jpg");
-    
-    //Give a random number from 0 to 5
-    var randomNumber = Math.floor(Math.random()*5);
-    
+                                        <!-- Collect the nav links, forms, and other content for toggling -->
 
 
-    return classes[randomNumber];
 
-}
+                                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
+                                            <ul class="nav navbar-nav navbar-right">
+                                                <li><a href="#home">Home</a></li>
+                                                <li><a href="#about"> About</a></li>
+                                                <li><a href="#portfolio">Portfolio</a></li>
 
 
-/*CENTER*/
+                            
+                                                    </ul>
+                                                </li>
+                                            </ul>
 
-$(document).ready(function()
-{
-    $("img.center").hover(function(g)
-    {
-        var randomClass = getCenterRandomImg();
-        $(g.target).attr("src", randomClass);
-    });
-});
 
+                                        </div>
 
-function getCenterRandomImg()
-{
-    //Store available css classes
-    var classes = new Array("tile2.jpg", "2tile2.jpg", "3tile2.jpg", "4tile2.jpg");
-    
-    //Give a random number from 0 to 5
-    var randomNumber = Math.floor(Math.random()*5);
-    
+                                    </div>
+                                </nav>
+                            </div>	
+                        </div>
 
+                    </div>
 
-    return classes[randomNumber];
+                </div>
+            </header> <!--End of header -->
 
-}
 
 
-/*RIGHT*/
-$(document).ready(function()
-{
-    $("img.right").hover(function(h)
-    {
-        var randomClass = getRightRandomImg();
-        $(h.target).attr("src", randomClass);
-    });
-});
 
 
-function getRightRandomImg()
-{
-    //Store available css classes
-    var classes = new Array("tile3.jpg", "2tile3.jpg", "3tile3.jpg", "4tile3.jpg");
-    
-    //Give a random number from 0 to 5
-    var randomNumber = Math.floor(Math.random()*5);
-    
+            <section id="home" class="home">
+                <div class="overlay all_overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 ">
+                                <div class="main_home_slider text-center">
+                                    <div class="single_home_slider">
+                                                         <div class="main_home wow fadeInUp" data-wow-duration="700ms">
+                                        <div class = "containercontainer">
+                                        <div class = "border">
 
+                                            <h1>Becky
+                                                Johnson</h1>
+                                  </div>
+                                  </div>
 
-    return classes[randomNumber];
+                                        </div>                      
+                                    </div>
+                                    
+                                    <div class="single_home_slider">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-}
 
+           
+ </section>
 
 
-</script>
 
 
 
-<title>Becky Johnson</title>
-</head>
+            <section id="about" class="about">
+                <div class="container">
+                    <div class="row">
 
+                        <div class="main_about_area sections text-center">
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <div class="head_title text-center">
+                                 
+                                    <h2>About</h2>
+                                    <div class="separator"></div>
+                                    <p>Hello, I'm a recently completed Creative Computing student from Goldsmiths, University of London. My interests and university
+                                    work has focused on the creative applications of coding, with a particular focus on music generation in my most recent projects. I'm interested in artificial intelligence, in particular swarm intelligence, and how these approaches can create new artistic possibilities.   </p>
+                                    <p>I currently work as tech curator for blue{shift} coding, involving organising and structuring course content, management of company equipment, and teaching children, ages 5 to 14, robotics and coding languages ranging from Scratch to p5.js.</p>
+                                    <p>If you would like to get in touch, please email becky-j_@hotmail.com</p>
 
+                                    </div>
 
+                                    <div class="footer_subcribs_area">
+                                        <div class="flowus">
+                                            <a href="https://twitter.com/becmjo"><i class="fa fa-twitter"></i></a>
+                                            <a href="https://www.instagram.com/becmjo/"><i class="fa fa-instagram"></i></a>
+                                        </div>
+                                        </div>
+          
 
-<body>
+                                
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
+           
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="scripts.js"></script>
 
-		<!--CONTAINER FOR ALL HOME PAGE TEXT-->
-		<div class = "textContainer">
 
 
-			<h1 class = "title">Becky Johnson</h1>
-		<p class = "tag"> Third year Creative Computing student at Goldsmiths, UOL. </p>
-
-                    <nav class = "_navigation"> 
-                    <ul>
-                
-
-                <li><a href="index.html#section2">Projects</a></li>
-                <li><a href="index.html#section3">Contact</a></li>
-                </ul>
-                </nav>
-
-			<nav class = "_navigation"> 
-				<!--
-				<a href="https://twitter.com/becmjo"><i class = "fa fa-twitter"></i></a>
-				<a href="https://www.instagram.com/becmjo/"><i class = "fa fa-instagram"></i></a>-->
-			</nav>
-
-
-		</div>
-
-
-		<div class = "tiles">
-			<img src="tile1.jpg" class = "left" alt="some_text">
-			<img src="tile2.jpg" class = "center" alt="some_text">
-			<img src="tile3.jpg" class = "right" alt="some_text">
-		</div>
-
-
-
-
-
-
-
-<!-- SECTION 2 - PROJECTS -->
-<div id = 'section2'>
-
-
-
-
-<a name='section2'><h1 class = 'title'>Projects</h1></a>
-
-
-
-<div class = "projectsContainer">
-
-
-
-
+          
 
 
         
 
+            <section id="portfolio" class="blog">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="main_blog sections">
+                                <div class="head_title text-center">
+                                    <h2>Portfolio</h2>
+                                    <div class="separator"></div>                          
+                                </div> 
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="placeholder.png">
-      <img src="projectImgs/img1.png" alt="Trolltunga Norway" width="300" height="200">
-    </a>
-    <div class="desc"><a href="transpose.html">Transpose</a></div>
-  </div>
-</div>
+                                <div class="main_blog_content">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="single_blog">
+                                                <div class="single_blog_img">
+                                                    <img src="assets/images/p1.png" alt="" />
+                                                   
+                                                </div>
+                                                <div class="single_blog_content">
+                                                    <p class="monseratregular">Swarm Key</p>
+                                                    <p>Swarm Key is an interactive generative music system that utilises swarm intelligence. Western tonal theory and user preference is embedded into the system as both guidance and constraints for swarms. Built in openFrameworks.</p>
+                                                    <p>Source code available <a href="https://github.com/Becky96/SwarmKey">here</a>. Album of composed music can be found <a href="https://soundcloud.com/swarmkey/sets/swarm-key">here</a>.</p>
+                                                    <hr />
+
+                                                    <div class="single_blog_bottom_content">
+                                                       
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="single_blog">
+                                                <div class="single_blog_img">
+                                                    <img src="assets/images/a2.png" alt="" />
+                                                    
+                                                </div>
+                                                <div class="single_blog_content">
+                                                    <p class="monseratregular">Flow Field Series</p>
+                                                    <p>As a side hobby from university study, I have experimented with different variations of noise and flow fields. </p><p>This is an ongoing process and I use a dedicated Instagram and Twitter account, as linked above, to post the results. Experiments have been created using Processing.</p>
+                                                    <hr />
+
+                                                    <div class="single_blog_bottom_content">
+                                                       
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="single_blog">
+
+                                            <div class="single_blog_img">
+                                                    <img src="assets/images/a1.png" alt="" />
+                                                   
+                                                </div>
+                                                <div class="single_blog_content">
+                                                    <p class="monseratregular">Roses of Grandi Series</p>
+                                                    <p>Another series of work includes exploring the Roses of Grandi algorithm. </p>
+                                                    <p>This work has also been posted to the dedicated Instagram and Twitter account, and also has been created using Processing.</p>
+                                                    <hr />
+
+                                                    <div class="single_blog_bottom_content">
+                                                       
+                                                    </div>                                               
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                    </div>
+                                    </div>
 
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="projectImgs/img2.png">
-      <img src="projectImgs/img2.png" alt="Forest" width="600" height="400">
-    </a>
-    <div class="desc">Mini project 1</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="projectImgs/img3.png">
-      <img src="projectImgs/img3.png" alt="Northern Lights" width="600" height="400">
-    </a>
-    <div class="desc">Mini project 2</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="projectImgs/img4.png">
-      <img src="projectImgs/img4.png" alt="Mountains" width="600" height="400">
-    </a>
-    <div class="desc">Mini project 3</div>
-  </div>
-</div>
-
-<div class="clearfix"></div>
 
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="projectImgs/img5.png">
-      <img src="projectImgs/img5.png" alt="Mountains" width="600" height="400">
-    </a>
-    <div class="desc">Mini project 4</div>
-  </div>
-</div>
 
-<div class="clearfix"></div>
-<div style="padding:6px;">
-  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
-  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-</div>
+                                    <div class="main_blog_content">
+
+                                     <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="single_blog">
+                                                <div class="single_blog_img">
 
 
+                                                    <img src="assets/images/1.png" alt="" />
+                                                    
+                                                </div>
+                                                <div class="single_blog_content">
+                                                    <p class="monseratregular">Step Sequencer</p>
+                                                    <p>Step sequencer built using openFrameworks. The system allows for different octaves and frequency analysis of the overall sound.</p>
+                                                    <p>Source code available <a href="http://gitlab.doc.gold.ac.uk/rjohn053/AAVPSequencer">here</a>.</p>
+                                                    <hr />
+
+                                                    <div class="single_blog_bottom_content">
+                                                       
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-sm-4">
+                                            <div class="single_blog">
+                                                <div class="single_blog_img">
+                                                    <img src="assets/images/a3.png" alt="" />
+                                                    
+                                                </div>
+                                                <div class="single_blog_content">
+                                                    <p class="monseratregular">Frequency Modulation with Bitalino</p>
+                                                    <p>Frequency modulation using the EMG sensor provided by a BITalino board kit. Using this signal and down-sampled frames of the camera, different oscillator frequencies are controlled using linear regression.</p>
+                                                    <p>Video of system can be found <a href="https://www.youtube.com/watch?v=02zgUUJwfM4">here</a>.</p>
+                                                    <hr />
+
+                                                    <div class="single_blog_bottom_content">
+                                                        
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="single_blog">
+                                                
+                                            <div class="single_blog_img">
+                                                    <img src="assets/images/mp2.gif" alt="" />
+                                                   
+                                                </div>
+
+                                                <div class="single_blog_content">
+                                                    <p class="monseratregular">Euclidean Sequencer</p>
+                                                    <p>Using Bjorklund's algorithm, 'The Theory of Rep-Rate Pattern Generation in the SNS Timing System', to determine Euclidean rhythms. Built in openFrameworks.</p>
+                                                    <p>Source code available <a href="http://gitlab.doc.gold.ac.uk/rjohn053/EuclideanSequencer">here</a>.</p>                                             
+                                                   <hr />
+
+                                                    <div class="single_blog_bottom_content">
+                                                       
+                                                    </div>
+
+                                                </div>
+                                                   
+
+                                                </div>
+                                            </div>
+                                        </div>                                    
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+          
 
         </div>
-</div>
+
+        <!-- START SCROLL TO TOP  -->
+
+        <div class="scrollup">
+            <a href="#"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+        <script src="assets/js/jquery.mixitup.min.js"></script>
+        <script src="assets/js/jquery.easing.1.3.js"></script>
+        <script src="assets/js/jquery.masonry.min.js"></script>
+        <script src="assets/js/jquery.fancybox.pack.js"></script>
+        <!--This is link only for gmaps-->
+        <script src="http://maps.google.com/maps/api/js"></script>
+        <script src="assets/js/gmaps.min.js"></script>
 
 
-<div id = 'section3'><a name = 'section3'> <h1 class = 'title'> Contact </h1></a></div>
+        <script>
+
+                                            function showmap() {
+                                                var mapOptions = {
+                                                    zoom: 8,
+                                                    scrollwheel: false,
+                                                    center: new google.maps.LatLng(-34.397, 150.644),
+                                                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                                                };
+                                                var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+                                            }
+
+        </script>
 
 
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>
 
-<!-- SECTION 3 -- CONTACT -->
-
-
-
-
-
-
-
-</body>
-
+    </body>
 </html>
